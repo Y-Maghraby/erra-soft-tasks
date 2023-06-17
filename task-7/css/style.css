@@ -1,0 +1,564 @@
+ 
+/* --------------- google---font---link-------------- */
+ @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100&display=swap');
+ 
+ /* global---style */
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+background-color: hsl(0, 0%, 99%);
+}
+.container{
+    margin: auto;
+    width: 65%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* ------------------header-----style--------------------- */
+
+.container header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky; */
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+header .left-header{
+    display: flex;
+    gap: 5rem;
+    padding: 1rem 0;
+    align-items: center;
+}
+header .left-header img{
+width: 2rem;
+}
+.left-header .logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 999;
+}
+.left-header .nav ul{
+    display: flex;
+    gap: 2rem
+}
+.left-header .nav li {
+    list-style: none;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+ header .nav li .home-title{
+    color:hsl(31, 100%, 70%) ;
+}
+header .nav li a:hover{
+    color:hsl(31, 100%, 70%) ;
+}
+header .right-header{
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.2em;
+    z-index: 2;
+}
+
+/* --------------home--section--style----------------------- */
+
+.container .home{
+    display: flex;
+    
+}
+.home .home-left {
+display: flex;
+gap: 3rem;
+transform: rotate(-90deg);
+position: relative;
+left: 13.5rem;
+}
+.home .home-left a{
+    font-size: .9em;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 55%);
+    
+}
+.home .home-left a:hover{
+    color: #000;
+}
+.home .home-right img{
+    width: 20rem;
+}
+.home .home-med{
+    align-self: center;
+    margin-left: -160px;
+}
+.home .home-med h1{
+    font-size: 2.5rem;
+}
+.home .home-med :nth-child(2){
+    font-size: 1rem;
+    color: hsl(0deg 0.87% 35.13%);
+}
+.home .home-med :nth-child(3){
+    font-size: 1.5rem;
+    color: hsl(31, 100%, 70%);
+    margin: 1.5rem 0;
+}
+.home .home-med :nth-child(4){
+    background-color: hsl(0, 0%, 75%);
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.home .home-med :nth-child(5){
+    background-color: hsl(0, 0%, 17%);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1.3rem 2rem;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: -7px;
+    cursor: pointer;
+}
+.home .home-right{
+    background-color: hsl(31, 100%, 70%);
+    width: 480px;
+    height:680px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(55px,-75px);
+}
+
+/* -------------------features---style------------------- */
+.container .features{
+    margin-top: 10rem;
+    text-align: center;
+    position: relative;
+}
+.features .features-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+.features h2::before{
+    content: "";
+    background-color:hsl(31, 100%, 70%) ;
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    margin: auto;
+    top: -10px;
+    right: 0;
+    left: 0;
+}
+.features-items .item{
+    background-color: #fff;
+    position: relative;
+    padding: 3rem 4rem;
+    text-align: center;
+    border: 1px solid hsl(0, 0%, 94%);
+    transition: all 1s;
+    overflow-y: hidden;
+}
+.features-items .item:hover button{
+    opacity: 1;
+    transform: translateY(0);
+}
+.features-items .item:hover{
+    background-color: hsl(31, 100%, 70%);
+}
+.features-items .item img,h4,p,button{
+    padding: 11px 0;
+}
+.features-items .item button{
+    background-color: hsl(0, 0%, 17%);
+    opacity: 0;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1.5rem ;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 1s;
+    transform: translateY(40px);
+}
+
+.features-items .item span{
+    position: absolute;
+    left: 0;
+    top:5rem;
+    transform: rotate(-90deg);
+    padding: 1rem ;
+    background-color: hsl(31, 100%, 70%);
+    color: #fff;
+    margin: -10px;
+}
+.features .features-items img{
+    height:10rem;
+}
+
+/* ------------------------about---style--------------------------- */
+
+.container .about{
+    display: flex;
+    gap: 10rem;
+    margin-top: 10rem;
+}
+.about .left-about img{
+width:100%;
+position: relative;
+top: -70px;
+left: 70px;
+}
+.about .left-about .cover{
+    background-color: hsl(31, 100%, 70%);
+    width: 450px;
+    height: 450px;
+}
+.about .right-about{
+    padding-top: 3rem;
+}
+.about .right-about h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    position: relative;
+    color: hsl(0, 0%, 15%);
+}
+.about .right-about h2::before{
+    content: "";
+    background-color:hsl(31, 100%, 70%) ;
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    margin: auto;
+    top: -10px;
+    left: 0;
+}
+.about .right-about :nth-child(2){
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 15%);
+    margin: 20px 0;
+}
+.about .right-about :nth-child(3){
+    color: hsl(0, 0%, 35%);
+    margin: 10px 0;
+}
+.about .right-about button{
+    background-color: hsl(0, 0%, 17%);
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* ---------------prodect--style-------------------- */
+
+.container .products{
+    margin-top: 10rem;
+    text-align: center;
+}
+.container .products h2{
+   position: relative;
+   font-weight: 500;
+   letter-spacing: 1.5px;
+   color: hsl(0, 0%, 15%);;
+}
+.container .products h2::before{
+    content: "";
+    background-color:hsl(31, 100%, 70%) ;
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    margin: auto;
+    top: -15px;
+    right: 0;
+    left: 0;
+}
+.products .items-product{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+}
+.items-product .card{
+    padding: 25px 45px;
+    color: #fff;
+    border: 1px solid hsl(0, 0%, 94%);
+    margin: 1rem;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.items-product .card:hover{
+    box-shadow: 0 8px 32px hsla(0, 0%, 10%, 0.1);
+}
+.products .items-product img{
+    width: 100px;
+}
+.items-product .card :nth-child(2){
+    color: hsl(0, 0%, 15%);
+}
+.items-product .card :nth-child(3){
+    color:hsl(31, 100%, 70%);
+}
+.items-product .card span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: hsl(0, 0%, 15%);
+    color: #fff;
+    padding: 5px;
+}
+
+/* ------------------------testimonal---style-------------- */
+
+.container .testimonal{
+    display: flex;
+    padding-top: 150px;
+    justify-content: space-between;
+}
+.testimonal .left-testimonal img{
+    width: 60px;
+    border-radius: 40%;
+    height: 60px;
+}
+.testimonal .left-testimonal{
+    width: 35%;
+}
+.left-testimonal .fa-quote-left{
+    background-color: 1px solid hsl(0, 0%, 94%);
+    padding: 15px;
+    box-shadow: 0 4px 12px hsla(0, 0%, 20%, 0.1);
+    color: hsl(31, 100%, 70%);
+    font-size: 20px;
+}
+.left-testimonal :nth-child(2){
+    color:hsl(0, 0%, 35%) ;
+    margin: 10px 0;
+}
+.left-testimonal :nth-child(3){
+    color: hsl(0, 0%, 15%) ;
+}
+.left-testimonal .profile{
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+.profile .text-profile :nth-child(1){
+    line-height: 1.5;
+    font-size: 20px;
+    color:hsl(0, 0%, 15%) ;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.profile .text-profile :last-child{
+    color: hsl(0, 0%, 35%);
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.left-testimonal .fa-arrow-left , .fa-arrow-right{
+    color: hsl(31, 100%, 70%);
+    margin: 10px;
+    padding: 10px;
+    background-color: 1px solid hsl(0, 0%, 94%);
+    box-shadow: 0 4px 12px hsla(0, 0%, 20%, 0.1);
+    cursor: pointer;
+}
+.testimonal .right-testimonal img{
+ width:100%;
+position: relative;
+top: 70px;
+left: -70px;
+}
+.right-testimonal .cover{
+    background-color: hsl(31, 100%, 70%);
+    width: 450px;
+    height: 450px;
+}
+
+/* ---------------------new---style------------------ */
+
+.container .new{
+    padding-top: 150px ;
+}
+.container .new h2{
+    text-align: center;
+    margin: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    font-weight: 500;
+}
+.container .new h2::before{
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color:hsl(31, 100%, 70%);
+    position: absolute;
+    margin: auto;
+    top: -15px;
+    right: 0;
+    left: 0;
+}
+.new .container-card{
+    display: flex;
+    text-align: center;
+}
+.container-card .card-new img{
+ height: 215px;
+ max-width: 100%;
+}
+.container-card .card-new{
+    background-color: #fff;
+    border: 1px solid hsl(0, 0%, 94%);
+    margin: 10px;
+    padding: 20px 50px;
+    position: relative;
+}
+.container-card .card-new span{
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ padding: 10px;
+ background-color:hsl(31, 100%, 70%) ;
+ color: #fff;
+}
+.container-card .card-new h4{
+    color: hsl(0, 0%, 15%);
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.container-card .card-new p{
+    color: hsl(31, 100%, 70%);
+    font-weight: 600;
+}
+.container-card .card-new button{
+    background-color: hsl(0, 0%, 17%);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 13px 25px;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px 0;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 1s;
+}
+.container-card .card-new:hover button{
+    transform: translateY(0);
+    opacity: 1;
+}
+.container-card .card-new:hover{
+    background-color: hsl(31, 100%, 70%);
+}
+
+
+/* ----------------contact---------style----------- */
+
+.container .contact{
+    background-color: hsl(31, 100%, 70%);
+    padding: 75px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px 0;
+}
+.contact .text-left{
+    width: 50%;
+}
+.contact .text-left h3{
+    color: hsl(0, 0%, 15%);
+    font-size: 35px;
+    font-weight: 500;
+}
+.contact .text-left p{
+    color: hsl(0, 0%, 35%);
+    font-size: 15px;
+    
+}
+.contact .inp-right{
+    display: flex;
+}
+.contact .inp-right input{
+    background-color: hsl(0, 0%, 94%);
+    border: none;
+    height: 60px;
+    padding: 30px;
+    font-size: 15px;
+}
+.contact .inp-right button{
+    width:150px;
+    height: 60px;
+    border: none;
+    background-color: hsl(0, 0%, 17%);
+    font-weight: 500;
+    font-size: 20px;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* --------------footer---style--------------- */
+
+footer .list-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.list-section h3{
+    margin-bottom: 20px;
+}
+.list-section p{
+    color: hsl(0, 0%, 35%);
+}
+.list-section i{
+    padding: 10px;
+    color: hsl(0, 0%, 35%);
+}
+footer hr{
+    opacity: 0.1;
+}
+ footer .end-section p{
+    text-align: center;
+    margin:35px 0 20px 0;
+    color: hsl(0, 0%, 35%);
+}
+
+
+
+
+
+
+
+

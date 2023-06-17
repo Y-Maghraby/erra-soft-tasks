@@ -1,0 +1,140 @@
+@media screen and (max-width:1240px) and (min-width:992px) {
+    body .container{
+        width: 85%;
+        margin: auto;   
+    }
+     .container .home .home-right img{
+            width: 15rem;
+        }
+    .container .about{
+        flex-wrap:wrap ;
+    }
+ 
+.new .container-card{
+    flex-wrap: wrap;
+}
+}
+
+/* ------tablet--size----- */
+
+@media screen and (max-width:768px) {
+    body .container{
+        width: 95%;
+    }
+    header .left-header .nav ul{
+        display: none;
+    }
+    .container .home{
+        flex-wrap: wrap;
+    }
+    .container .home .home-left{
+        left: 30px;
+    }
+    .features .features-items{
+        flex-wrap: wrap;
+    }
+    .container .about{
+        flex-direction: column;
+    }
+    .container .about .left-about .cover{
+        margin: auto;
+    }
+    .container .testimonal{
+        flex-direction: column;
+    }
+    .container .testimonal .left-testimonal{
+        width: 100%;
+     }
+     .container .right-testimonal .cover{
+        margin: auto;
+     }
+    .new .container-card{
+        flex-wrap: wrap;
+    }
+    .container .contact{
+        flex-direction: column;
+    }
+    footer .list-section{
+        flex-wrap: wrap;
+    }
+}
+
+/* ---mobile--size--- */
+
+@media screen and (max-width:600px) {
+body .container{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+    .container .home .home-left{
+    transform: rotate(0);
+}
+.container .home .home-med{
+    margin-left: 0;
+    margin-top: 10px;
+}
+ .container .home .home-med h1{
+    font-size: 1.5rem;
+}
+.container .home .home-med p{
+    font-size: .8rem;
+}
+.container .home .home-med button{
+    font-size: .7rem;
+}
+.container .home .home-right{
+transform: translate(0);
+margin-top: 10px;
+width: 300px;
+height: 300px;
+}
+.container .home .home-right img{
+    width: 10rem;
+}
+ .container .about .left-about .cover{
+    width: 300px;
+    height: 300px;
+}
+.container .about .left-about .cover img{
+    top: -35px;
+    left: 35px;
+}
+ .container .about .right-about :nth-child(2){
+    font-size: 1.5rem;
+}.container .about .right-about button{
+    font-size: .7rem;
+}
+.container .about .right-about h2::before{
+    right: 0;
+}
+ .container .testimonal .left-testimonal{
+    width: 100%;
+ }
+  .container .right-testimonal .cover{
+    width: 300px;
+    height: 300px;
+  }
+  .container .right-testimonal .cover img{
+    top: 40px;
+    left: -30px;
+  }
+ .container .contact .text-left{
+    width: 100%;
+ }
+ .container .contact .text-left h3{
+    font-size: 1.7rem;
+ }
+ .container .contact .inp-right{
+    margin-top: 10px;
+ }
+ .container .contact .inp-right button{
+    font-size: 11px;
+    width: 85px;
+ }
+.container .contact .inp-right input{
+    padding: 17px;
+}
+
+
+}
